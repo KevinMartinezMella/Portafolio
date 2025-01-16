@@ -120,6 +120,7 @@
 .divSombreado {
     box-shadow: -10px -8px 10px 10px #0d7b91;
     border-radius: 10px;
+    padding: 0;
 }
 .imgSobreada {
     border-radius: 10px;
@@ -151,4 +152,46 @@
     background-color: #fff;
     padding: 4px;
     border-radius: 100%;
+}
+.imagenRedondaResp {
+    width: 180px;
+}
+@media(max-width: 1400px) {
+    .divSombreado {
+        box-shadow: none;
+    }
+}
+@media(max-width: 1200px) {
+    .divSombreado {
+        box-shadow: none;
+    }
+    .cardProyectosDerecha {
+        position: static;
+        width: 100%;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .cardProyectos {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 991px) {
+    .imagenRedondaResp {
+        border-radius: 100%;
+    }
+    .cardProyectos {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .divSombreado {
+        box-shadow: none;
+        padding: 12px;
+    }
+    .cardProyectosDerecha {
+        position: static;
+        width: 100%;
+        left: 0;
+        margin-bottom: 20px;
+    }
 }
