@@ -13,17 +13,49 @@
     <title>Kevin Martínez - Desarrollador</title>
 </head>
 <body class="fondoAzulOscuro">
-    <div class="navbar fixed-top fondoNegro justify-content-center">
-        <p class="text-light mb-0 fuenteGruesa">Kevin Martínez - Desarrollador</p>
-    </div>
-    <div class="banner fondoAzulOscuro">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top fondoNegro justify-content-center text-light">
+        <!-- <p class="text-light mb-0 fuenteGruesa">Kevin Martínez - Desarrollador</p> -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div style="background-color: #0d7b91;padding: 7px 10px; border-radius: 100%;">
+                    <img width="30" src="img/km-logo.png" alt="">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active text-center puntero" onclick="scrollear('portada')">Portada</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link active text-center puntero" onclick="scrollear('experiencia')">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-center puntero" onclick="scrollear('proyectos')">Proyectos</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link active text-center puntero" onclick="scrollear('contacto')">Contacto</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link active text-center" href="https://www.github.com/kevinmartinezmella/" target="_blank"><span class="fa-brands fa-github text-light fuenteMedia"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-center" href="https://www.linkedin.com/in/kevin-andres-martinez/" target="_blank"><span class="fa-brands fa-linkedin text-light fuenteMedia"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <div class="banner fondoAzulOscuro" id="portada">
         <div class="container">
             <div class="d-flex vh-100">
                 <div class="d-flex align-items-center sinEspacio">
                     <div>
                         <p class="text-light mb-3 fuenteMedia fuenteMenosGruesa">Kevin Andrés Martínez</p>
-                        <p class="mb-0 text-light fuenteGrande fuenteGruesa" style="font-size: 10px;">Desarrollador</p>
-                        <p class="colorAzul fuenteGrande fuenteGruesa">Full Stack</p>
+                        <p class="mb-0 text-light fuenteGrande fuenteGruesa textoPrincipal">Desarrollador</p>
+                        <p class="colorAzul fuenteGrande fuenteGruesa textoPrincipal">Full Stack</p>
                         <div class="redes">
                             <a href="https://www.github.com/kevinmartinezmella/" target="_blank"><span class="ms-3 fa-brands fa-github text-light fuenteMedia me-3"></span></a>
                             <a href="https://www.linkedin.com/in/kevin-andres-martinez/" target="_blank"><span class="fa-brands fa-linkedin text-light fuenteMedia"></span></a>
@@ -36,7 +68,7 @@
     <div class="contenido mb-5 pb-5">
         <div class="container pt-5 mt-5 text-light">
             <div class="row mb-5 pb-5">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-4">
                     <h2 class="mb-4">Soy <span class="fuenteGruesa colorAzul">Kevin Martínez</span></h2>
                     <p class="fuenteMedia"><span class="fuenteGruesa colorAzul">Analista Programador</span> enfocado en el desarrollo Full Stack con experiencia en tecnologías <span class="fuenteGruesa colorAzul">web</span> y <span class="fuenteGruesa colorAzul">móviles</span>.</p>
                     <p class="fuenteMedia">Me especializo en crear aplicaciones dinámicas, optimizadas y fáciles de usar, combinando habilidades técnicas con un enfoque en el diseño intuitivo.</p>
@@ -65,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pt-5 mt-5 mb-5 pb-5">
+            <div class="pt-5 mt-5 mb-5 pb-5" id="experiencia">
                 <h2 class="text-light text-center fuenteGruesa mb-5"><span class="colorAzul">Experiencia</span> Laboral</h2>
                 <div class="row">
                     <div class="col-lg-4 mt-4">
@@ -162,9 +194,11 @@
                 </div>
             </div>
         </div>
-        <div class="pt-5 mt-5 mb-5 pb-5">
+        <div id="proyectos" class="pt-5 mt-5 mb-5 pb-5">
             <h2 class="text-light fuenteGruesa text-center">Algunos <span class="colorAzul">Proyectos</span></h2>
             <div class="container mt-5 pt-3" style="position: relative;">
+                
+                <!-- Proyectos Normal -->
                 <div class="d-lg-block d-none">
                     <div class="row">
                         <div class="col-lg-6 mb-3" style="z-index: 9;">
@@ -339,7 +373,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- Fin Proyectos Normal -->
 
+                <!-- Proyectos Responsivo -->
                 <div class="d-block d-lg-none">
                     <div class="row">
                         <div class="col-lg-6 mb-3" style="z-index: 9;">
@@ -514,9 +550,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- Fin Proyectos Responsivo -->
             </div>
         </div>
-        <div class="pt-5 mt-5 pb-5 fondoTransparente">
+        <div class="pt-5 mt-5 pb-5 fondoTransparente" id="contacto">
             <!-- <h2 class="fuenteGruesa text-light text-center">Contacto</h2> -->
             <div class="container">
                 <div class="row">
@@ -571,3 +608,4 @@
     return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 </script>
+<script src="js/main.js"></script>
