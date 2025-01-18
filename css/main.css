@@ -156,6 +156,9 @@
 .imagenRedondaResp {
     width: 180px;
 }
+.puntero {
+    cursor: pointer;
+}
 @media(max-width: 1400px) {
     .divSombreado {
         box-shadow: none;
@@ -194,4 +197,13 @@
         left: 0;
         margin-bottom: 20px;
     }
+    .textoPrincipal {
+        font-size: 55px;
+    }
+}
+
+@media(max-width: 390px) {
+    .textoPrincipal {
+        font-size: 45px;
+    } 
 }
