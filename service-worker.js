@@ -6,7 +6,8 @@ const urlsToCache = [
   '/css/terminal.css',
   '/js/main.js',
   '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  '/icons/icon-512x512.png',
+  '/CV_Kevin_Martinez.pdf'
 ];
 
 // Instalar el Service Worker y cachear recursos
